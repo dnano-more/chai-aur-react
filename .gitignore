@@ -1,0 +1,174 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+jspm_packages/
+
+# =========================
+# Build / Production
+# =========================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.vercel/
+.netlify/
+.storybook-out/
+coverage/
+
+# =========================
+# React Native / Expo
+# =========================
+.expo/
+.expo-shared/
+web-build/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# Cache Files
+# =========================
+.eslintcache
+.stylelintcache
+.cache-loader/
+.sass-cache/
+.tmp/
+temp/
+
+# =========================
+# Package Managers
+# =========================
+.pnpm-store/
+.npm/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Testing
+# =========================
+coverage/
+playwright-report/
+test-results/
+cypress/videos/
+cypress/screenshots/
+
+# =========================
+# Firebase
+# =========================
+.firebase/
+
+# =========================
+# Docker
+# =========================
+.docker/
+
+# =========================
+# Misc
+# =========================
+*.pem
+*.pid
+*.seed
+
+# =========================
+# Local databases
+# =========================
+*.sqlite
+*.sqlite3
+
+# =========================
+# Optional lock files
+# (keep only ONE usually)
+# =========================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =========================
+# CRA specific
+# =========================
+/build
+
+# =========================
+# Vite specific
+# =========================
+vite.svg
+
+# =========================
+# Parcel specific
+# =========================
+.cache/
+
+# =========================
+# Turborepo
+# =========================
+.turbo/
+
+# =========================
+# Remix
+# =========================
+.remix/
+
+# =========================
+# Svelte / Astro / Modern tooling
+# =========================
+.svelte-kit/
+astro.config.mjs.timestamp-*
+
+# =========================
+# Mac resource fork files
+# =========================
+._*
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
