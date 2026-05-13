@@ -1,3 +1,5 @@
+import Chai from "./Chai";
+
 function App() {
 
   return (
@@ -7,6 +9,8 @@ function App() {
         yt react js seris
       </h1>
       <h3>this project is created using vite bundler</h3>
+
+      <Chai /> 
     </>
   );
 }
