@@ -1,7 +1,7 @@
 import Chai from "./Chai";
 
 function App() {
-
+  const username = "dnano-more"
   return (
     <>
       <h1>
@@ -9,8 +9,9 @@ function App() {
         yt react js seris
       </h1>
       <h3>this project is created using vite bundler</h3>
-
       <Chai /> 
+
+      <h4>{username}</h4>
     </>
   );
 }
