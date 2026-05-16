@@ -11,6 +11,14 @@ function App() {
     }
 
     setCount(count)
+    // setCount(count + 1)
+    // setCount(count + 1)
+    // setCount(count + 1)
+
+    setCount(prevValue => prevValue + 1)
+    setCount(prevValue => prevValue + 1)
+    setCount(prevValue => prevValue + 1)
+    setCount(prevValue => prevValue + 1)
   };
   
   const removeValue = () => {
