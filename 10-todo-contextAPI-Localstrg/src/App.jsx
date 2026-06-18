@@ -1,12 +1,39 @@
 import { useState } from "react";
 import { TodoProvider } from "./contexts";
+import "./App.css"
 
 function App() {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (todo) => {
-    setTodos((prev) => [...prev])
-  }
+    setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
+  };
+
+  const updatedTodo = (id, todo) => {
+    setTodos((prev) =>
+      prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)),
+    );
+
+    // prev.map((eachVal) => {
+    //   if( eachVal.id === id) {
+    //     todo
+    //   }
+    // })
+  };
+
+  const deleteTodo = (id) => {
+    setTodos((prev) => prev.filter((matchTodo) => matchTodo.id !== id));
+  };
+
+  const toggleComplete = (id) => {
+    setTodos((prev) =>
+      prev.map((prevTodo) =>
+        prevTodo === id
+          ? { ...prevTodo, completed: !prevTodo.completed }
+          : prevTodo,
+      ),
+    );
+  };
 
   return (
     <TodoProvider
